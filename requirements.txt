@@ -1,0 +1,5 @@
+opencv-python
+pillow
+pywin32
+pynput
+pyTelegramBotAPI
