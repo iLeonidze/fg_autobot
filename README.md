@@ -1,5 +1,5 @@
 # fg_autobot
-This bot will play Fortnite for you 24/7
+This bot will play Fortnite and farm XP for you 24/7
 
 ## How to install
 1. Download latest python3
@@ -49,3 +49,7 @@ This bot will play Fortnite for you 24/7
 
 ## How to stop
 1. Ctrl+C in CMD
+
+## Q&A
+#### Why FPS in "monitor" window is too low?
+Low FPS is specially designed to decrease the load on the CPU. It can be changed in `FPS` option, but this is not recommended. 
