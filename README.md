@@ -1,5 +1,5 @@
 # fg_autobot
-This bot will play in Fortnite for you 24/7
+This bot will play Fortnite for you 24/7
 
 ## How to install
 1. Download latest python3
@@ -44,7 +44,7 @@ This bot will play in Fortnite for you 24/7
 1. Navigate to repo in CMD
 1. `python3 main.py`
 1. Make shure you selected english keyboard layout
-1. Make sure nothing is visially blocking the Fortnight window
+1. Make sure nothing is visially blocking the Fortnite window
 1. Do not shutdown your monitor
 
 ## How to stop
