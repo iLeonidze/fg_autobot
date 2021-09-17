@@ -1,5 +1,6 @@
 opencv-python
 pillow
 pywin32
+pywinauto
 pynput
 pyTelegramBotAPI
