@@ -1,3 +1,4 @@
+PyYAML
 opencv-python
 pillow
 pywinauto
