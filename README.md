@@ -55,7 +55,7 @@ This bot will play Fortnite and farm XP for you 24/7
 1. Navigate to repo in CMD
 1. `git reset --hard HEAD`
 1. `git pull`
-1. `python3 -m pip install -r requirements.txt`
+1. `python3 -m pip install -I -r requirements.txt`
 
 ## How to uninstall
 1. Navigate to repo in CMD
