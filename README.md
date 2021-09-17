@@ -2,7 +2,8 @@
 This bot will play Fortnite and farm XP for you 24/7
 
 ## How to install
-1. Download latest python3
+1. Install [Git](https://git-scm.com/downloads)
+1. Download latest [python3](https://www.python.org/downloads/)
 1. Open CMD, navigate to directory where you want to download repo
 1. `git clone https://github.com/iLeonidze/fg_autobot.git`
 1. `cd fg_autobot`
