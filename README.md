@@ -32,10 +32,10 @@ This bot will play Fortnite and farm XP for you 24/7
 1. Go to `@botfather` bot in Telegram and create a new bot
 1. After creation you will recieve bot token - copy it
 1. Go to `@getmyid_bot` bot in Telegram and get your ID
-1. Edit `main.py` file, fill bot token in `BOT_TOKEN`, fill your ID in `OWNER_USER_ID`. Example:
-   ```
-   BOT_TOKEN = '1234567890:ABCDEFGABCDEFGABCDEFGABCDEFGABCDEFGAB'
-   OWNER_USER_ID = '123456789'
+1. Create `settings.yaml` file, fill bot token in `bot_token`, fill your ID in `tg_user_id`. Example:
+   ```yaml
+   bot_token: '1234567890:ABCDEFGABCDEFGABCDEFGABCDEFGABCDEFGAB'
+   tg_user_id: 123456789
    ```
 
 ## How to start
