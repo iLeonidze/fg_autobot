@@ -9,9 +9,21 @@ import numpy as np
 import random
 import ctypes
 import telebot
+import os.path
+import yaml
+
+SETTINGS_FILE = 'settings.yaml'
+settings = None
+if os.path.isfile(SETTINGS_FILE):
+    with open(SETTINGS_FILE, "r") as stream:
+        settings = yaml.safe_load(stream)
 
 BOT_TOKEN = ''
 OWNER_USER_ID = ''
+if settings and settings.get('bot_token'):
+    BOT_TOKEN = settings['bot_token']
+if settings and settings.get('tg_user_id'):
+    OWNER_USER_ID = settings['tg_user_id']
 if BOT_TOKEN != '':
     TB = telebot.TeleBot(BOT_TOKEN)
 
