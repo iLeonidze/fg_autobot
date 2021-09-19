@@ -68,7 +68,7 @@ This bot will play Fortnite and farm XP for you 24/7
 
 ## How to reinstall
 1. Navigate to repo in CMD
-1. `python3 -m pip unistall -r requirements.txt`
+1. `python3 -m pip uninstall -r requirements.txt`
 1. `git reset --hard HEAD`
 1. `git pull`
 1. `python3 -m pip install --upgrade pip`
