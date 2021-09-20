@@ -41,6 +41,7 @@ This bot will play Fortnite and farm XP for you 24/7
    ```
 
 ## How to start
+1. Disconnect all gamepads
 1. Close all unnecessary processes, nothing should pop-up
 1. Open Fortnite, go to Battle Royale game
 1. Select "Impostors" game mode
