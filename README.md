@@ -75,6 +75,11 @@ This bot will play Fortnite and farm XP for you 24/7
 1. `python3 -m pip install --upgrade pip`
 1. `python3 -m pip install -r requirements.txt`
 
+## How to build EXE version
+1. `python3 -m pip install pyinstaller`
+1. `pyinstaller main.spec --noconfirm`
+1. Use executable `dist/fg_autobot`
+
 ## Q&A
 #### Why FPS in "monitor" window is too low?
 Low FPS is specially designed to decrease the load on the CPU. It can be changed in `FPS` option, but this is not recommended. 
