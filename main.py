@@ -1,3 +1,4 @@
+import sys
 from os import listdir, path
 from PIL import ImageGrab
 import pywinauto
