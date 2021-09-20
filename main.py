@@ -1,4 +1,4 @@
-import sys
+from sys import exit
 from os import listdir, path
 from PIL import ImageGrab
 import pywinauto
