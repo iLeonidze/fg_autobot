@@ -270,7 +270,7 @@ def main():
         for event in submitted_events:
             focus_window(source_hwd)
             events[event[0]](event[1], event[2], event[3])
-        if random.randint(0,20) == 10 and (time.time()-last_random_animated) > 120:
+        if (time.time()-last_random_animated) > (25 + random.uniform(0,15)):
             last_random_animated = time.time()
             random_animation(window_rect)
 
