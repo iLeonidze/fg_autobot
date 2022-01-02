@@ -84,15 +84,12 @@ def click_button(topLeft, botttomRight, windowRect):
     pywinauto.mouse.click(button='left', coords=(randX, randY))
 
 
-def do_random_move(topLeft, botttomRight, windowRect):
-    keyboard_button = random.choice('wasd12')
-    print('Random keyboard: %s' % keyboard_button)
-    press_time = random.uniform(0.2,2)
-    if keyboard_button == '1':
-        time.sleep(press_time)
-        return
-    if keyboard_button == '2':
-        keyboard_button = 'space'
+def do_random_move():
+    keyboard_button = random.choice('wasd ')
+    print('    Random keyboard: %s' % keyboard_button)
+    press_time = random.uniform(0.5,2)
+    if keyboard_button == ' ':
+        keyboard_button = Key.space
     keyboard.press(keyboard_button)
     time.sleep(press_time)
     keyboard.release(keyboard_button)
@@ -163,8 +160,17 @@ def do_vote(topLeft, botttomRight, windowRect):
     keyboard.release('f')
     print('    Done')
 
-def do_maingame(topLeft, bottomRight, windowRect):
-    do_random_move(topLeft, bottomRight, windowRect)
+
+def do_maingame(topLeft, botttomRight, windowRect):
+    do_random_move()
+
+
+def do_not_add_friends(topLeft, botttomRight, windowRect):
+    print('Do not adding friends...')
+    time.sleep(random.uniform(5,15))
+    click_button(topLeft, botttomRight, windowRect)
+    time.sleep(0.5)
+    print('    Done')
 
 
 events = {
@@ -178,7 +184,8 @@ events = {
     'get_reward': do_get_reward,
     'resume': do_resume,
     'vote': do_vote,
-    'maingame': do_maingame
+    'maingame': do_maingame,
+    'add_friends': do_not_add_friends
 }
 
 
@@ -285,6 +292,7 @@ def main():
         #if (cv2.waitKey(1) & 0xFF) == ord('s'):
         #    print(' -> Screenshot created!')
         #    cv2.imwrite('./screenshot.png', source_image)
+        
         for event in submitted_events:
             focus_window(source_hwd)
             events[event[0]](event[1], event[2], event[3])
