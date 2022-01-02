@@ -84,6 +84,20 @@ def click_button(topLeft, botttomRight, windowRect):
     pywinauto.mouse.click(button='left', coords=(randX, randY))
 
 
+def do_random_move(topLeft, botttomRight, windowRect):
+    keyboard_button = random.choice('wasd12')
+    print('Random keyboard: %s' % keyboard_button)
+    press_time = random.uniform(0.2,2)
+    if keyboard_button == '1':
+        time.sleep(press_time)
+        return
+    if keyboard_button == '2':
+        keyboard_button = 'space'
+    keyboard.press(keyboard_button)
+    time.sleep(press_time)
+    keyboard.release(keyboard_button)
+    
+
 def do_finish(topLeft, botttomRight, windowRect):
     global GAMES_PLAYED
     print('[!] Game finished, closing to main menu...')
@@ -149,6 +163,9 @@ def do_vote(topLeft, botttomRight, windowRect):
     keyboard.release('f')
     print('    Done')
 
+def do_maingame(topLeft, bottomRight, windowRect):
+    do_random_move(topLeft, bottomRight, windowRect)
+
 
 events = {
     'finished_blue': do_finish,
@@ -161,6 +178,7 @@ events = {
     'get_reward': do_get_reward,
     'resume': do_resume,
     'vote': do_vote,
+    'maingame': do_maingame
 }
 
 
