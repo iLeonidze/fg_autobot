@@ -43,11 +43,12 @@ This bot will play Fortnite and farm XP for you 24/7
 ## How to start
 1. Disconnect all gamepads
 1. Close all unnecessary processes, nothing should pop-up
+1. Make shure you selected english keyboard layout before running python script
 1. Open Fortnite, go to Battle Royale game
 1. Select "Impostors" game mode
+1. Ensure you playing in non-private mode
 1. Navigate to repo in CMD
 1. `python3 main.py`
-1. Make shure you selected english keyboard layout
 1. Make sure nothing is visially blocking the Fortnite window
 1. Do not shutdown your monitor
 
