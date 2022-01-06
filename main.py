@@ -55,10 +55,13 @@ def focus_window(hwd):
 def tg_send_image(image, caption):
     if BOT_TOKEN == '':
         return
-    TB.send_chat_action(OWNER_USER_ID, 'upload_photo')
-    encode_param=[int(cv2.IMWRITE_JPEG_QUALITY),90]
-    data = cv2.imencode('.jpg', image)[1].tobytes()
-    TB.send_photo(OWNER_USER_ID, data, caption)
+    try:
+        TB.send_chat_action(OWNER_USER_ID, 'upload_photo')
+        encode_param=[int(cv2.IMWRITE_JPEG_QUALITY),90]
+        data = cv2.imencode('.jpg', image)[1].tobytes()
+        TB.send_photo(OWNER_USER_ID, data, caption)
+    except Exception:
+        print('   !!! TG EXCEPTED !!!')
 
 
 def random_animation(window_rect):
