@@ -126,6 +126,16 @@ def do_cancel(topLeft, botttomRight, windowRect):
     print('    Done')
 
 
+def do_skip_opinion(topLeft, botttomRight, windowRect):
+    print('[!] Opinion skipped! Closing to main menu...')
+    keyboard.press(Key.esc)
+    time.sleep(random.uniform(1.1,2.1))
+    keyboard.release(Key.esc)
+    time.sleep(random.uniform(2,4))
+    print('    Done')
+
+
+
 def do_start(topLeft, botttomRight, windowRect):
     print('[!] Starting game from main menu...')
     time.sleep(random.uniform(0.5,3))
@@ -188,7 +198,8 @@ events = {
     'resume': do_resume,
     'vote': do_vote,
     'maingame': do_maingame,
-    'add_friends': do_not_add_friends
+    'add_friends': do_not_add_friends,
+    'opinion': do_skip_opinion
 }
 
 
