@@ -53,6 +53,7 @@ This bot will play Fortnite and farm XP for you 24/7
 1. Do not shutdown your monitor
 
 ## How to stop
+1. Focus CMD window
 1. Ctrl+C in CMD
 
 ## How to update
